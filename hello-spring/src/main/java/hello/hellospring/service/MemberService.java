@@ -8,7 +8,6 @@ import java.util.Optional;
 
 public class MemberService {
     private final MemberRepository memberRepository;
-
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
@@ -16,7 +15,6 @@ public class MemberService {
 
     // 회원 가입
     public long join(Member member) {
-
         validateDuplicateMember(member); // 이름 중복확인
 
         memberRepository.save(member);
