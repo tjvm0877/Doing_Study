@@ -2,12 +2,13 @@ package spring.doitmyself.service;
 
 import spring.doitmyself.domain.Member;
 import spring.doitmyself.repository.MemberRepository;
+import spring.doitmyself.repository.MemoryMemberRepository;
 
 import java.util.List;
 import java.util.Optional;
 
 public class MemberService {
-    public MemberRepository memberRepository;
+    private MemberRepository memberRepository = new MemoryMemberRepository();
 
     public long join(Member member) {
         //이름 중복 확인
