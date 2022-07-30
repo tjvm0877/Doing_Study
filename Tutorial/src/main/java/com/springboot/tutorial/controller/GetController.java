@@ -1,6 +1,8 @@
 package com.springboot.tutorial.controller;
 
 import com.springboot.tutorial.dto.MemberDto;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
@@ -8,19 +10,23 @@ import java.util.Map;
 @RestController
 @RequestMapping("/api/get-api")
 public class GetController {
+    private final Logger LOGGER = LoggerFactory.getLogger(GetController.class);
 
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     public String getHello() {
+        LOGGER.info("getHello 메서드가 호출되었습니다.");
         return "Hello, World";
     }
 
     @GetMapping(value = "/name")
     public String getName() {
+        LOGGER.info("getName 메서드가 호출되었습니다.");
         return "hyun";
     }
 
     @GetMapping(value = "variable1/{variable}")
     public String getVariable(@PathVariable String variable) {
+        LOGGER.info("@PathVariable을 통해 들어온 값 : {}", variable);
         return variable;
     }
 
