@@ -39,7 +39,7 @@ public class ProductServieImpl implements ProductService {
         product.setName(productDto.getName());
         product.setPrice(productDto.getPrice());
         product.setStock(productDto.getStock());
-        product.setUpdatedAt(LocalDateTime.now());
+        product.setCreatedAt(LocalDateTime.now());
         product.setUpdatedAt(LocalDateTime.now());
 
         Product savedProduct = productDAO.insertProduct(product);
@@ -67,7 +67,7 @@ public class ProductServieImpl implements ProductService {
     }
 
     @Override
-    public void deleteProduct(Long number, String name) throws Exception {
+    public void deleteProduct(Long number) throws Exception {
         productDAO.deleteProduct(number);
     }
 }
