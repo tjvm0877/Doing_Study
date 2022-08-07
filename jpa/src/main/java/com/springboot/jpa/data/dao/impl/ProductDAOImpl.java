@@ -1,6 +1,6 @@
 package com.springboot.jpa.data.dao.impl;
 
-import com.springboot.jpa.data.dao.ProductDao;
+import com.springboot.jpa.data.dao.ProductDAO;
 import com.springboot.jpa.data.entity.Product;
 import com.springboot.jpa.data.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 import java.util.Optional;
 
 @Component
-public class ProductDAOImpl implements ProductDao {
+public class ProductDAOImpl implements ProductDAO {
 
     // 리포지터리 정의, 생성자 생성을 통해 의존성 주입
     @Autowired
