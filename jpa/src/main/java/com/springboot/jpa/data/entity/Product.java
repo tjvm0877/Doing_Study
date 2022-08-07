@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.time.LocalDateTime;
 
 /*
-DB의 테이블에 대응하는 클래스
+실제 DB의 테이블에 대응하는 클래스
 
 엔티티에는 데이터 DB에 쓰일 테이블과 칼럼을 정의,
 엔티티에 어노테이션을 사용하면 테이블 간의 연관관계를 정의할 수 있음
