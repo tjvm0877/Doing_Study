@@ -1,5 +1,4 @@
-package com.springboot.tutorial.config;
-
+package com.springboot.jpa.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -20,7 +19,7 @@ public class SwaggerConfiguration {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.springboot.tutorial"))
+                .apis(RequestHandlerSelectors.basePackage("com.springboot.jpa"))
                 .paths(PathSelectors.any())
                 .build();
     }
