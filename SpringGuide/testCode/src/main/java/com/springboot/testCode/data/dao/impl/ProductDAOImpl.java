@@ -4,10 +4,12 @@ import com.springboot.testCode.data.dao.ProductDAO;
 import com.springboot.testCode.data.entity.Product;
 import com.springboot.testCode.data.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
 import java.util.Optional;
 
+@Component
 public class ProductDAOImpl implements ProductDAO {
 
     private final ProductRepository productRepository;
