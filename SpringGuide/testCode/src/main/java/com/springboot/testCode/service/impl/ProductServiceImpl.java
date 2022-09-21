@@ -1,6 +1,5 @@
 package com.springboot.testCode.service.impl;
 
-import com.springboot.testCode.data.dao.ProductDAO;
 import com.springboot.testCode.data.dto.ProductDto;
 import com.springboot.testCode.data.dto.ProductResponseDto;
 import com.springboot.testCode.data.entity.Product;
