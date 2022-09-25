@@ -3,7 +3,6 @@ package com.springboot.testCode.controller;
 import com.google.gson.Gson;
 import com.springboot.testCode.data.dto.ProductDto;
 import com.springboot.testCode.data.dto.ProductResponseDto;
-import com.springboot.testCode.data.entity.Product;
 import com.springboot.testCode.service.impl.ProductServiceImpl;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -21,6 +20,10 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static org.mockito.BDDMockito.given;
 
+/*
+@WebMvcTest
+웹에서 사용되는 요청과 응답에 대한 테스트를 수행
+ */
 @WebMvcTest(ProductController.class)
 public class ProductControllerTest {
 
