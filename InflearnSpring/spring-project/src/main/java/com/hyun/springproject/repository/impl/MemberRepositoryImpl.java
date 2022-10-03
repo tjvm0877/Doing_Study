@@ -43,4 +43,9 @@ public class MemberRepositoryImpl implements MemberRepository {
     public List<Member> findAll() {
         return new ArrayList<>(store.values());
     }
+
+    // store의 모든값 삭제
+    public void clearStore() {
+        store.clear();
+    }
 }
