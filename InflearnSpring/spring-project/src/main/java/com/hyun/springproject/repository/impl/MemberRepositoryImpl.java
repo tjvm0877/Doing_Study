@@ -2,9 +2,11 @@ package com.hyun.springproject.repository.impl;
 
 import com.hyun.springproject.domain.Member;
 import com.hyun.springproject.repository.MemberRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
+@Repository
 public class MemberRepositoryImpl implements MemberRepository {
 
     // 메모리에 저장하기 위한 저장소
