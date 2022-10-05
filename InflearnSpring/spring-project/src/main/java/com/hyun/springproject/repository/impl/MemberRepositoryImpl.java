@@ -16,7 +16,6 @@ public class MemberRepositoryImpl implements MemberRepository {
     private static Long sequence = 0L;
 
     @Override
-
     public Member save(Member member) {
 
         // 시퀀스 값을 증가 시켜주고 id로 설정
